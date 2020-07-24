@@ -34,6 +34,16 @@
 <p>这里提供$VAR1$表达式：</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groovyScript(<span class="string">"def result='';def params=\"$&#123;_1&#125;\".replaceAll('[\\\\[|\\\\]|\\\\s]', '').split(',').toList();for(i = 0; i &lt; params.size(); i++) &#123;if(i!=0)result+= ' * ';result+='@param ' + params[i] + ': ' +'\\t'+ ((i &lt; (params.size() - 1)) ? '\\n' : '');&#125;;return result"</span>, methodParameters())</span><br></pre></td></tr></table></figure>
 
+<h2 id="统一换行符"><a href="#统一换行符" class="headerlink" title="统一换行符"></a>统一换行符</h2><p>File -&gt; Settings -&gt; Editor -&gt;Code Style</p>
+<p><img src="C:%5CUsers%5C20608%5CDocuments%5CMarkdownNote%5C%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91%5CNoteBook%5Cimg%5Cclip_image002-1595581960991.jpg" alt="img"></p>
+<h2 id="使用空格缩进而非Tab"><a href="#使用空格缩进而非Tab" class="headerlink" title="使用空格缩进而非Tab"></a>使用空格缩进而非Tab</h2><ol>
+<li><p>在不同的编辑器里Tab的长度可能会不一致。这会导致有Tab的代码，用不同的编辑器打开时，格式可能会乱。</p>
+</li>
+<li><p>代码压缩时，空格会有更好的压缩率。</p>
+</li>
+</ol>
+<p>如何习惯使用Tab键的话，请将其设置为四个空格</p>
+<p><img src="C:%5CUsers%5C20608%5CDocuments%5CMarkdownNote%5C%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91%5CNoteBook%5Cimg%5Cclip_image004-1595581960992.jpg" alt="img"></p>
 <h2 id="代码智能提示，忽略大小写"><a href="#代码智能提示，忽略大小写" class="headerlink" title="代码智能提示，忽略大小写"></a>代码智能提示，忽略大小写</h2><ol>
 <li>File -&gt; Settings -&gt; Editor -&gt; Code Completion里取消勾选Match case就可以了.</li>
 </ol>
